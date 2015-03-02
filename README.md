@@ -2,7 +2,7 @@
 
 ##Программирование
 
-1. Написать мини-фреймворк для тестированиия веб-сервиса [Google Translate](http://translate.google.ru). Стек используемых технологий: Ruby, Cucumber, Capybara/Selenium/Watir/PageObject/SitePrism (в любых сочетаниях)
+1. Написать мини-фреймворк для тестированиия веб-сервиса [Google Translate](http://translate.google.ru). Стек используемых технологий: Ruby + Cucumber + Capybara/Selenium/Watir/PageObject/SitePrism (в любых сочетаниях)
 2. Написать тест-план для функционального тестирования 
 3. При помощи фреймворка реализовать сценарии из тест-плана
 
