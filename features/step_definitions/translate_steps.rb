@@ -106,14 +106,14 @@ Then(/^I should see "(.*?)" in phrasebook$/) do |text|
 end
 
 Then(/^I will select elements of phrasebook$/) do
-  browser.div(:id => 'pb-cb-a').divs[0].click
+  browser.div(:id => 'pb-cb-a').divs[0].when_present.click
 end
 
 
 Then(/^I will remove elements of phrasebook$/) do
-  browser.div(:id => 'pb-del-c').divs[0].click
+  browser.div(:id => 'pb-del-c').divs[0].when_present.click
 end
 
-And(/^I should see that elements doesn't exist in phrasebook$/) do
+And(/^I should see that any elements doesn't exist in phrasebook$/) do
   browser.divs(:class => 'gt-pb-ttc').length.should == 0
 end

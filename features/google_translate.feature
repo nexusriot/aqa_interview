@@ -32,7 +32,7 @@ Feature: Google Translate
     And I should see "cat" in phrasebook
     Then I will select elements of phrasebook
     Then I will remove elements of phrasebook
-    And I should see that elements doesn't exist in phrasebook
+    And I should see that any elements doesn't exist in phrasebook
 
 
 
