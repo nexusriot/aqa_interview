@@ -103,5 +103,17 @@ Then(/^I should see "(.*?)" in phrasebook$/) do |text|
   if !found
     fail(StandardError.new(text + ' not found in phrasebook!'))
   end
+end
 
+Then(/^I will select elements of phrasebook$/) do
+  browser.div(:id => 'pb-cb-a').divs[0].click
+end
+
+
+Then(/^I will remove elements of phrasebook$/) do
+  browser.div(:id => 'pb-del-c').divs[0].click
+end
+
+And(/^I should see that elements doesn't exist in phrasebook$/) do
+  browser.divs(:class => 'gt-pb-ttc').length.should == 0
 end
